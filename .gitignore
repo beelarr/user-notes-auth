@@ -8,3 +8,4 @@
 out
 gen
 lib/node_modules
+values/fb-creds.js

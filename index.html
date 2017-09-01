@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body>
+<body ng-app="MakeANoteApp">
+
+<h1>Make a Note</h1>
+
+<ng-view></ng-view>
 
 
 
@@ -24,12 +28,17 @@
     <script type="text/javascript" src="./lib/node_modules/firebase/firebase.js"></script>
 
     <script src="app/app.js"></script>
-    <script src="app/values/fb-creds.js"></script>
+    <script src="app/AppConstants.js"></script>
+    <script src="app/AppConfig.js"></script>
+    
+    
     <script src="app/factories/factory-todo.js"></script>
     <script src="app/factories/factory-user.js"></script>
+    <script src="app/factories/AuthFactory.js"></script>
     <script src="app/controllers/control-new-list.js"></script>
     <script src="app/controllers/control-new-note.js"></script>
     <script src="app/controllers/control-login.js"></script>
     <script src="app/controllers/registation.js"></script>
+    <script src="app/controllers/AuthCtrl.js"></script>
 </body>
 </html>
